@@ -1,0 +1,2 @@
+requests==2.26.0
+pyodbc==4.0.32  # o la versión más reciente compatible
