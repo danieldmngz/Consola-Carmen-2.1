@@ -1,14 +1,19 @@
-from datetime import datetime
-import time  # Para usar time.sleep y pausar el ciclo
+import os
+import time
 import requests
 import json
-import configparser  # Para cargar el archivo settings.config
-import pyodbc  # Para conectarse a la base de datos SQL Server
+import configparser
+import pyodbc
+import logging
+from datetime import datetime
 from carmen_cloud_client import VehicleAPIClient, VehicleAPIOptions, SelectedServices, Locations
+
+# Configuración de logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Cargar el archivo de configuración
 config = configparser.ConfigParser()
-config.read('settings.config')
+config.read('C:\\Users\\SV CALLE 98\\Documents\\Consola-Carmen-2.1\\Consola-Carmen-2.1\\settings.config')
 
 # Leer las variables del archivo settings.config
 IP_INTERFACE = config['NETWORK']['IP_INTERFACE']
@@ -16,10 +21,34 @@ CAPTURE_PLATE_URL = config['NETWORK']['CAPTURE_PLATE_URL']
 SNAPSHOT_DIR = config['DIRECTORIES']['SNAPSHOT_DIR']
 IdParqueaderoHorus = config['PARKING']['IdParqueaderoHorus']
 
-# Configuración de conexión a la base de datos
-DB_CONNECTION_STRING = config['DATABASE']['CONNECTION_STRING']  # Asegúrate de definir este campo en settings.config
+# Verificar si el directorio de snapshots existe
+if not os.path.exists(SNAPSHOT_DIR):
+    os.makedirs(SNAPSHOT_DIR)
+    logging.info(f"Directorio creado: {SNAPSHOT_DIR}")
 
-# Inicializar el cliente de la API con las opciones
+# Cadena de conexión a SQL Server
+connection_string = (
+    "DRIVER={ODBC Driver 17 for SQL Server};"
+    "SERVER=172.16.91.126;"
+    "DATABASE=Parqueoo;"
+    "UID=usrParqueoo;"
+    "PWD=Us3rP4rqu300*;"
+    "MultipleActiveResultSets=True;"
+    "TrustServerCertificate=Yes;"
+)
+
+def get_db_connection():
+    """Conectar a la base de datos y devolver la conexión."""
+    while True:  # Intentar hasta que la conexión sea exitosa
+        try:
+            conn = pyodbc.connect(connection_string)
+            logging.info("Conexión exitosa a la base de datos Parqueoo QA INCOMELEC")
+            return conn
+        except Exception as e:
+            logging.error(f"Error al conectar a la base de datos: {e}. Reintentando en 5 segundos...")
+            time.sleep(5)  # Esperar antes de reintentar
+
+# Inicializar el cliente de la API
 options = VehicleAPIOptions(
     api_key="44f68f1932acd0a4525d6be6e50cc3d5675d97d6",
     services=SelectedServices(anpr=True, mmr=True),
@@ -28,79 +57,79 @@ options = VehicleAPIOptions(
 )
 client = VehicleAPIClient(options)
 
-def insertar_en_base_de_datos(placa, ruta_snapshot, fecha_snapshot, direccion_mac):
+import uuid  # Importa el módulo uuid para generar GUIDs
+
+def insertar_en_base_de_datos(placa, ruta_snapshot, fecha_snapshot, direccion_mac, parqueadero_id):
+    connection = None
     try:
-        # Conectar a la base de datos
-        connection = pyodbc.connect(DB_CONNECTION_STRING)
+        connection = get_db_connection()
         cursor = connection.cursor()
 
-        # Consulta de inserción en la tabla PlacasAuditoria
-        query = """
-        INSERT INTO PlacasAuditoria (IdParqueaderoHorus, Placa, DireccionMAC, FechaSnapshot, RutaSnapshot)
-        VALUES (?, ?, ?, ?, ?)
-        """
-        values = (IdParqueaderoHorus, placa, direccion_mac, fecha_snapshot, ruta_snapshot)
+        # Generamos la fecha y hora actual
+        ahora = datetime.now()
+        
+        # Genera un nuevo GUID para el Id
+        nuevo_id = uuid.uuid4()  # Genera un nuevo GUID
 
-        # Ejecutar la consulta
+        query = """
+        INSERT INTO PlacasAuditoria (Id, CreateTime, UpdateTime, IdParqueaderoHorus, Placa, DireccionMAC, FechaSnapshot, RutaSnapshot)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """
+        
+        # Proporciona el nuevo GUID en los valores
+        values = (nuevo_id, ahora, ahora, parqueadero_id, placa, direccion_mac, fecha_snapshot, ruta_snapshot)
+
         cursor.execute(query, values)
         connection.commit()
 
-        print(f"Datos insertados correctamente en la tabla PlacasAuditoria: {placa}")
-    
+        logging.info(f"Datos insertados correctamente en la tabla PlacasAuditoria: {placa}")
+
     except Exception as e:
-        print(f"Error al insertar en la base de datos: {str(e)}")
-    
+        logging.error(f"Error al insertar en la base de datos: {str(e)}")
+
     finally:
-        cursor.close()
-        connection.close()
+        if cursor:
+            cursor.close()
+        if connection:
+            connection.close()
+
 
 def upload_image_from_ip():
-    # Contador inicial
-    contador_mensaje = 0
+    """Captura una imagen desde la cámara IP y procesa la matrícula."""
     try:
         # Consultar el estado del pin
         response = requests.get(IP_INTERFACE)
-        if response.status_code != 200:
-            print(json.dumps({"error": f"Error al consultar el ESP32: {response.status_code}"}))
-            return
+        response.raise_for_status()
 
-        # Obtener el estado del pin de la respuesta
         result = response.json()
         estado_pin = result.get('estadoPin', None)
+
         if estado_pin is None:
-            print(json.dumps({"error": "Error: No se pudo deserializar la respuesta JSON."}))
+            logging.error("Error: No se pudo deserializar la respuesta JSON.")
             return
 
         if estado_pin == 1:
             # Capturar imagen desde la cámara IP
             img_response = requests.get(CAPTURE_PLATE_URL)
-            if img_response.status_code != 200:
-                print(json.dumps({"error": f"Error al descargar la imagen: {img_response.status_code}"}))
-                return
+            img_response.raise_for_status()
 
-            # Enviar la imagen descargada al VehicleAPIClient para obtener la matrícula
+            # Enviar la imagen descargada al VehicleAPIClient
+            plate_text = "SIN_MATRICULA"
             try:
-                api_response = client.send(img_response.content)  # Usar el cliente de la API
-
-                # Extraer el campo separatedText de la respuesta
-                plate_text = None
+                api_response = client.send(img_response.content)
                 if hasattr(api_response.data, 'vehicles') and api_response.data.vehicles:
-                    vehicle = api_response.data.vehicles[0]  # Obtener el primer vehículo de la lista
+                    vehicle = api_response.data.vehicles[0]
                     if hasattr(vehicle, 'plate') and vehicle.plate.found:
-                        plate_text = vehicle.plate.separatedText  # Extraer el texto de la matrícula
-                    else:
-                        plate_text = "SIN_MATRICULA"  # Si no se encuentra matrícula, usar un valor por defecto
-                else:
-                    plate_text = "SIN_MATRICULA"  # Si no se encuentra información de vehículos
+                        plate_text = vehicle.plate.separatedText
 
             except Exception as e:
-                print(json.dumps({"error": f"Error al enviar la imagen al API: {str(e)}"}))
+                logging.error(f"Error al enviar la imagen al API: {e}")
                 return
 
             # Guardar imagen localmente
             current_time = datetime.now().strftime('%Y%m%d_%H%M%S')
             file_name = f"{plate_text}_{current_time}.jpg"
-            local_image_path = f"{SNAPSHOT_DIR}/{file_name}"
+            local_image_path = os.path.join(SNAPSHOT_DIR, file_name)
 
             with open(local_image_path, 'wb') as file:
                 file.write(img_response.content)
@@ -110,7 +139,6 @@ def upload_image_from_ip():
             mac_address = "6c:f1:7e:1f:8e:b7"  # Cambia esto por la dirección MAC real
             ubicaciones = {
                 "6c:f1:7e:1f:8e:b7": IdParqueaderoHorus
-                # Puedes agregar más asociaciones de MAC y ubicaciones aquí
             }
             ubicacion = ubicaciones.get(mac_address, "Ubicacion no encontrada")
 
@@ -124,28 +152,34 @@ def upload_image_from_ip():
                 },
             }
 
-            # Insertar los datos en la base de datos
-            insertar_en_base_de_datos(plate_text, local_image_path, datetime.now(), mac_address)
+            # Insertar los datos en la base de datos utilizando response_data
+            insertar_en_base_de_datos(
+                response_data["Matricula"],        # Placa
+                response_data["RutaGuardada"],     # RutaSnapshot
+                formatted_date_time,                # FechaSnapshot
+                mac_address,                        # DireccionMAC
+                IdParqueaderoHorus                 # IdParqueaderoHorus
+            )
 
-            print(json.dumps(response_data))  # Imprimir el JSON de respuesta
+            logging.info(json.dumps(response_data))  # Imprimir el JSON de respuesta
 
         else:
-            # Contador que se incrementa indefinidamente mientras el estado del pin sea 0
-            print(({"message": fr"El pin del LOOP esta en 0. No se ejecuta tarea."}))
+            logging.info("El pin del LOOP está en 0. No se ejecuta tarea.")
 
     except requests.RequestException as e:
-        print(json.dumps({"error": f"Error de red al consultar la imagen: {str(e)}"}))
+        logging.error(f"Error de red al consultar la imagen: {e}")
     except Exception as e:
-        print(json.dumps({"error": f"Error inesperado: {str(e)}"}))
+        logging.error(f"Error inesperado: {e}")
 
 def run_forever():
+    """Ejecuta la captura de imágenes de forma indefinida."""
     try:
         while True:
             upload_image_from_ip()
-            time.sleep(0.1)  # Pausa de 0.2 segundos antes de la siguiente consulta
+            time.sleep(0.1)  # Pausa de 0.1 segundos antes de la siguiente consulta
     except KeyboardInterrupt:
-        print("Proceso detenido manualmente.")
+        logging.info("Proceso detenido manualmente.")
 
 if __name__ == "__main__":
-    print("Iniciando proceso de captura de imágenes. Presiona Ctrl+C para detener.")
+    logging.info("Iniciando proceso de captura de imágenes. Presiona Ctrl+C para detener.")
     run_forever()
