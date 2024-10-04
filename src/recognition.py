@@ -1,9 +1,18 @@
 from datetime import datetime
-from config import IP_INTERFACE, CAPTURE_PLATE_URL, SNAPSHOT_DIR
 import time  # Para usar time.sleep y pausar el ciclo
 import requests
 import json
+import configparser  # Para cargar el archivo settings.config
 from carmen_cloud_client import VehicleAPIClient, VehicleAPIOptions, SelectedServices, Locations
+
+# Cargar el archivo de configuración
+config = configparser.ConfigParser()
+config.read('settings.config')
+
+# Leer las variables del archivo settings.config
+IP_INTERFACE = config['NETWORK']['IP_INTERFACE']
+CAPTURE_PLATE_URL = config['NETWORK']['CAPTURE_PLATE_URL']
+SNAPSHOT_DIR = config['DIRECTORIES']['SNAPSHOT_DIR']
 
 # Inicializar el cliente de la API con las opciones
 options = VehicleAPIOptions(
@@ -88,13 +97,13 @@ def upload_image_from_ip():
 
         else:
             # Contador que se incrementa indefinidamente mientras el estado del pin sea 0
-                print(({"message": fr"El pin del LOOP esta en 0. No se ejecuta tarea."}))
-                '''
-                 while True:
-                    contador_mensaje += 1  # Incrementar el contador
-                    print(({"message": {fr"LOOP # Detectado" + contador_mensaje}}))
-                    time.sleep(1)  # Pausar 0.2 segundos
-                '''
+            print(({"message": fr"El pin del LOOP esta en 0. No se ejecuta tarea."}))
+            '''
+            while True:
+                contador_mensaje += 1  # Incrementar el contador
+                print(({"message": {fr"LOOP # Detectado" + contador_mensaje}}))
+                time.sleep(1)  # Pausar 0.2 segundos
+            '''
                
     except requests.RequestException as e:
         print(json.dumps({"error": f"Error de red al consultar la imagen: {str(e)}"}))
@@ -111,6 +120,6 @@ def run_forever():
         print("Proceso detenido manualmente.")
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     print("Iniciando proceso de captura de imágenes. Presiona Ctrl+C para detener.")
-run_forever()
+    run_forever()
