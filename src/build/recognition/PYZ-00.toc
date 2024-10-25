@@ -1,0 +1,1198 @@
+('C:\\Users\\SV CALLE '
+ '98\\Documents\\Consola-Carmen-2.1\\Consola-Carmen-2.1\\src\\build\\recognition\\PYZ-00.pyz',
+ [('__future__',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\__future__.py',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_aix_support.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_compression.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_py_abc.py',
+   'PYMODULE'),
+  ('_pydatetime',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_pydatetime.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_strptime.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_threading_local.py',
+   'PYMODULE'),
+  ('annotated_types',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\annotated_types\\__init__.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\argparse.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ast.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\base64.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\bisect.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\bz2.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\calendar.py',
+   'PYMODULE'),
+  ('carmen_cloud_client',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\__init__.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.errors',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\errors.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.models',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\models.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.storage_and_hook',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\storage_and_hook\\__init__.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.storage_and_hook.api_storage_status_request',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\storage_and_hook\\api_storage_status_request.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.storage_and_hook.client',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\storage_and_hook\\client.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.storage_and_hook.create_hook_request',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\storage_and_hook\\create_hook_request.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.storage_and_hook.events_response',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\storage_and_hook\\events_response.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.storage_and_hook.hook',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\storage_and_hook\\hook.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.storage_and_hook.options',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\storage_and_hook\\options.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.storage_and_hook.storage_status_response',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\storage_and_hook\\storage_status_response.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.storage_and_hook.update_hook_request',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\storage_and_hook\\update_hook_request.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.transport',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\transport\\__init__.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.transport.client',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\transport\\client.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.transport.options',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\transport\\options.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.transport.response',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\transport\\response.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.utils',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\utils.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.vehicle',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\vehicle\\__init__.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.vehicle.client',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\vehicle\\client.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.vehicle.options',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\vehicle\\options.py',
+   'PYMODULE'),
+  ('carmen_cloud_client.vehicle.response',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\carmen_cloud_client\\vehicle\\response.py',
+   'PYMODULE'),
+  ('certifi',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\certifi\\__init__.py',
+   'PYMODULE'),
+  ('certifi.core',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\certifi\\core.py',
+   'PYMODULE'),
+  ('charset_normalizer',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\charset_normalizer\\__init__.py',
+   'PYMODULE'),
+  ('charset_normalizer.api',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\charset_normalizer\\api.py',
+   'PYMODULE'),
+  ('charset_normalizer.cd',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\charset_normalizer\\cd.py',
+   'PYMODULE'),
+  ('charset_normalizer.constant',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\charset_normalizer\\constant.py',
+   'PYMODULE'),
+  ('charset_normalizer.legacy',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\charset_normalizer\\legacy.py',
+   'PYMODULE'),
+  ('charset_normalizer.models',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\charset_normalizer\\models.py',
+   'PYMODULE'),
+  ('charset_normalizer.utils',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\charset_normalizer\\utils.py',
+   'PYMODULE'),
+  ('charset_normalizer.version',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\charset_normalizer\\version.py',
+   'PYMODULE'),
+  ('colorsys',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\colorsys.py',
+   'PYMODULE'),
+  ('configparser',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\configparser.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\contextlib.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\contextvars.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\copy.py',
+   'PYMODULE'),
+  ('csv',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\csv.py',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\dataclasses.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\datetime.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\decimal.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\dis.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\utils.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\fnmatch.py',
+   'PYMODULE'),
+  ('fractions',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\fractions.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ftplib.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\getopt.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\getpass.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\gettext.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\gzip.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\hashlib.py',
+   'PYMODULE'),
+  ('hmac',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\hmac.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\http\\client.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('http.cookies',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\http\\cookies.py',
+   'PYMODULE'),
+  ('idna',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\idna\\__init__.py',
+   'PYMODULE'),
+  ('idna.core',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\idna\\core.py',
+   'PYMODULE'),
+  ('idna.idnadata',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\idna\\idnadata.py',
+   'PYMODULE'),
+  ('idna.intranges',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\idna\\intranges.py',
+   'PYMODULE'),
+  ('idna.package_data',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\idna\\package_data.py',
+   'PYMODULE'),
+  ('idna.uts46data',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\idna\\uts46data.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib._abc',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\_abc.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\metadata\\__init__.py',
+   'PYMODULE'),
+  ('importlib.metadata._adapters',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\metadata\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.metadata._collections',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\metadata\\_collections.py',
+   'PYMODULE'),
+  ('importlib.metadata._functools',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\metadata\\_functools.py',
+   'PYMODULE'),
+  ('importlib.metadata._itertools',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\metadata\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.metadata._meta',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\metadata\\_meta.py',
+   'PYMODULE'),
+  ('importlib.metadata._text',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\metadata\\_text.py',
+   'PYMODULE'),
+  ('importlib.readers',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\readers.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\resources\\__init__.py',
+   'PYMODULE'),
+  ('importlib.resources._adapters',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\resources\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.resources._common',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\resources\\_common.py',
+   'PYMODULE'),
+  ('importlib.resources._itertools',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\resources\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.resources._legacy',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\resources\\_legacy.py',
+   'PYMODULE'),
+  ('importlib.resources.abc',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\resources\\abc.py',
+   'PYMODULE'),
+  ('importlib.resources.readers',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\resources\\readers.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\inspect.py',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ipaddress.py',
+   'PYMODULE'),
+  ('json',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\lzma.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\mimetypes.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\netrc.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\nturl2path.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\numbers.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\opcode.py',
+   'PYMODULE'),
+  ('pathlib',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\pathlib.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\pickle.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\platform.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\pprint.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\py_compile.py',
+   'PYMODULE'),
+  ('pydantic',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\__init__.py',
+   'PYMODULE'),
+  ('pydantic._internal',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\__init__.py',
+   'PYMODULE'),
+  ('pydantic._internal._config',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_config.py',
+   'PYMODULE'),
+  ('pydantic._internal._core_metadata',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_core_metadata.py',
+   'PYMODULE'),
+  ('pydantic._internal._core_utils',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_core_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._dataclasses',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_dataclasses.py',
+   'PYMODULE'),
+  ('pydantic._internal._decorators',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_decorators.py',
+   'PYMODULE'),
+  ('pydantic._internal._decorators_v1',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_decorators_v1.py',
+   'PYMODULE'),
+  ('pydantic._internal._discriminated_union',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_discriminated_union.py',
+   'PYMODULE'),
+  ('pydantic._internal._docs_extraction',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_docs_extraction.py',
+   'PYMODULE'),
+  ('pydantic._internal._fields',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_fields.py',
+   'PYMODULE'),
+  ('pydantic._internal._forward_ref',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_forward_ref.py',
+   'PYMODULE'),
+  ('pydantic._internal._generate_schema',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_generate_schema.py',
+   'PYMODULE'),
+  ('pydantic._internal._generics',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_generics.py',
+   'PYMODULE'),
+  ('pydantic._internal._git',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_git.py',
+   'PYMODULE'),
+  ('pydantic._internal._import_utils',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_import_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._internal_dataclass',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_internal_dataclass.py',
+   'PYMODULE'),
+  ('pydantic._internal._known_annotated_metadata',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_known_annotated_metadata.py',
+   'PYMODULE'),
+  ('pydantic._internal._mock_val_ser',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_mock_val_ser.py',
+   'PYMODULE'),
+  ('pydantic._internal._model_construction',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_model_construction.py',
+   'PYMODULE'),
+  ('pydantic._internal._repr',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_repr.py',
+   'PYMODULE'),
+  ('pydantic._internal._schema_generation_shared',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_schema_generation_shared.py',
+   'PYMODULE'),
+  ('pydantic._internal._serializers',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_serializers.py',
+   'PYMODULE'),
+  ('pydantic._internal._signature',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_signature.py',
+   'PYMODULE'),
+  ('pydantic._internal._std_types_schema',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_std_types_schema.py',
+   'PYMODULE'),
+  ('pydantic._internal._typing_extra',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_typing_extra.py',
+   'PYMODULE'),
+  ('pydantic._internal._utils',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._validate_call',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_validate_call.py',
+   'PYMODULE'),
+  ('pydantic._internal._validators',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_validators.py',
+   'PYMODULE'),
+  ('pydantic._migration',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\_migration.py',
+   'PYMODULE'),
+  ('pydantic.aliases',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\aliases.py',
+   'PYMODULE'),
+  ('pydantic.annotated_handlers',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\annotated_handlers.py',
+   'PYMODULE'),
+  ('pydantic.color',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\color.py',
+   'PYMODULE'),
+  ('pydantic.config',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\config.py',
+   'PYMODULE'),
+  ('pydantic.dataclasses',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\dataclasses.py',
+   'PYMODULE'),
+  ('pydantic.deprecated',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\deprecated\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.class_validators',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\deprecated\\class_validators.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.config',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\deprecated\\config.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.copy_internals',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\deprecated\\copy_internals.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.json',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\deprecated\\json.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.parse',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\deprecated\\parse.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.tools',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\deprecated\\tools.py',
+   'PYMODULE'),
+  ('pydantic.errors',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\errors.py',
+   'PYMODULE'),
+  ('pydantic.fields',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\fields.py',
+   'PYMODULE'),
+  ('pydantic.functional_serializers',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\functional_serializers.py',
+   'PYMODULE'),
+  ('pydantic.functional_validators',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\functional_validators.py',
+   'PYMODULE'),
+  ('pydantic.json_schema',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\json_schema.py',
+   'PYMODULE'),
+  ('pydantic.main',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\main.py',
+   'PYMODULE'),
+  ('pydantic.networks',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\networks.py',
+   'PYMODULE'),
+  ('pydantic.plugin',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\plugin\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.plugin._loader',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\plugin\\_loader.py',
+   'PYMODULE'),
+  ('pydantic.plugin._schema_validator',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\plugin\\_schema_validator.py',
+   'PYMODULE'),
+  ('pydantic.root_model',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\root_model.py',
+   'PYMODULE'),
+  ('pydantic.type_adapter',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\type_adapter.py',
+   'PYMODULE'),
+  ('pydantic.types',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\types.py',
+   'PYMODULE'),
+  ('pydantic.validate_call_decorator',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\validate_call_decorator.py',
+   'PYMODULE'),
+  ('pydantic.version',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\version.py',
+   'PYMODULE'),
+  ('pydantic.warnings',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic\\warnings.py',
+   'PYMODULE'),
+  ('pydantic_core',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic_core\\__init__.py',
+   'PYMODULE'),
+  ('pydantic_core.core_schema',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydantic_core\\core_schema.py',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\queue.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\quopri.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\random.py',
+   'PYMODULE'),
+  ('requests',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\__init__.py',
+   'PYMODULE'),
+  ('requests.__version__',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\__version__.py',
+   'PYMODULE'),
+  ('requests._internal_utils',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\_internal_utils.py',
+   'PYMODULE'),
+  ('requests.adapters',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\adapters.py',
+   'PYMODULE'),
+  ('requests.api',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\api.py',
+   'PYMODULE'),
+  ('requests.auth',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\auth.py',
+   'PYMODULE'),
+  ('requests.certs',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\certs.py',
+   'PYMODULE'),
+  ('requests.compat',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\compat.py',
+   'PYMODULE'),
+  ('requests.cookies',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\cookies.py',
+   'PYMODULE'),
+  ('requests.exceptions',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\exceptions.py',
+   'PYMODULE'),
+  ('requests.hooks',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\hooks.py',
+   'PYMODULE'),
+  ('requests.models',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\models.py',
+   'PYMODULE'),
+  ('requests.packages',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\packages.py',
+   'PYMODULE'),
+  ('requests.sessions',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\sessions.py',
+   'PYMODULE'),
+  ('requests.status_codes',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\status_codes.py',
+   'PYMODULE'),
+  ('requests.structures',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\structures.py',
+   'PYMODULE'),
+  ('requests.utils',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\utils.py',
+   'PYMODULE'),
+  ('requests_toolbelt',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\__init__.py',
+   'PYMODULE'),
+  ('requests_toolbelt._compat',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\_compat.py',
+   'PYMODULE'),
+  ('requests_toolbelt.adapters',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\adapters\\__init__.py',
+   'PYMODULE'),
+  ('requests_toolbelt.adapters.source',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\adapters\\source.py',
+   'PYMODULE'),
+  ('requests_toolbelt.adapters.ssl',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\adapters\\ssl.py',
+   'PYMODULE'),
+  ('requests_toolbelt.auth',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\auth\\__init__.py',
+   'PYMODULE'),
+  ('requests_toolbelt.auth._digest_auth_compat',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\auth\\_digest_auth_compat.py',
+   'PYMODULE'),
+  ('requests_toolbelt.auth.guess',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\auth\\guess.py',
+   'PYMODULE'),
+  ('requests_toolbelt.auth.http_proxy_digest',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\auth\\http_proxy_digest.py',
+   'PYMODULE'),
+  ('requests_toolbelt.multipart',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\multipart\\__init__.py',
+   'PYMODULE'),
+  ('requests_toolbelt.multipart.decoder',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\multipart\\decoder.py',
+   'PYMODULE'),
+  ('requests_toolbelt.multipart.encoder',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\multipart\\encoder.py',
+   'PYMODULE'),
+  ('requests_toolbelt.streaming_iterator',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\streaming_iterator.py',
+   'PYMODULE'),
+  ('requests_toolbelt.utils',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\utils\\__init__.py',
+   'PYMODULE'),
+  ('requests_toolbelt.utils.user_agent',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests_toolbelt\\utils\\user_agent.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\selectors.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\shutil.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\signal.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\socket.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ssl.py',
+   'PYMODULE'),
+  ('statistics',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\statistics.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\string.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\stringprep.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\subprocess.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\sysconfig.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tarfile.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tempfile.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\textwrap.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\threading.py',
+   'PYMODULE'),
+  ('token',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tokenize.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\typing.py',
+   'PYMODULE'),
+  ('typing_extensions',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\typing_extensions.py',
+   'PYMODULE'),
+  ('urllib',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('urllib3',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\__init__.py',
+   'PYMODULE'),
+  ('urllib3._base_connection',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\_base_connection.py',
+   'PYMODULE'),
+  ('urllib3._collections',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\_collections.py',
+   'PYMODULE'),
+  ('urllib3._request_methods',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\_request_methods.py',
+   'PYMODULE'),
+  ('urllib3._version',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\_version.py',
+   'PYMODULE'),
+  ('urllib3.connection',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\connection.py',
+   'PYMODULE'),
+  ('urllib3.connectionpool',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\connectionpool.py',
+   'PYMODULE'),
+  ('urllib3.contrib',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\contrib\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.connection',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\connection.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.fetch',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\fetch.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.request',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\request.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.response',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\response.py',
+   'PYMODULE'),
+  ('urllib3.contrib.pyopenssl',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\contrib\\pyopenssl.py',
+   'PYMODULE'),
+  ('urllib3.contrib.socks',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\contrib\\socks.py',
+   'PYMODULE'),
+  ('urllib3.exceptions',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\exceptions.py',
+   'PYMODULE'),
+  ('urllib3.fields',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\fields.py',
+   'PYMODULE'),
+  ('urllib3.filepost',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\filepost.py',
+   'PYMODULE'),
+  ('urllib3.http2',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\http2\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.http2.connection',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\http2\\connection.py',
+   'PYMODULE'),
+  ('urllib3.http2.probe',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\http2\\probe.py',
+   'PYMODULE'),
+  ('urllib3.poolmanager',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\poolmanager.py',
+   'PYMODULE'),
+  ('urllib3.response',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\response.py',
+   'PYMODULE'),
+  ('urllib3.util',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.util.connection',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\connection.py',
+   'PYMODULE'),
+  ('urllib3.util.proxy',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\proxy.py',
+   'PYMODULE'),
+  ('urllib3.util.request',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\request.py',
+   'PYMODULE'),
+  ('urllib3.util.response',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\response.py',
+   'PYMODULE'),
+  ('urllib3.util.retry',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\retry.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\ssl_.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_match_hostname',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\ssl_match_hostname.py',
+   'PYMODULE'),
+  ('urllib3.util.ssltransport',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\ssltransport.py',
+   'PYMODULE'),
+  ('urllib3.util.timeout',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\timeout.py',
+   'PYMODULE'),
+  ('urllib3.util.url',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\url.py',
+   'PYMODULE'),
+  ('urllib3.util.util',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\util.py',
+   'PYMODULE'),
+  ('urllib3.util.wait',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\urllib3\\util\\wait.py',
+   'PYMODULE'),
+  ('uuid',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\uuid.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\zipfile\\__init__.py',
+   'PYMODULE'),
+  ('zipfile._path',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\zipfile\\_path\\__init__.py',
+   'PYMODULE'),
+  ('zipfile._path.glob',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\zipfile\\_path\\glob.py',
+   'PYMODULE'),
+  ('zoneinfo',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\zoneinfo\\__init__.py',
+   'PYMODULE'),
+  ('zoneinfo._common',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\zoneinfo\\_common.py',
+   'PYMODULE'),
+  ('zoneinfo._tzpath',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\zoneinfo\\_tzpath.py',
+   'PYMODULE'),
+  ('zoneinfo._zoneinfo',
+   'C:\\Users\\SV CALLE '
+   '98\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\zoneinfo\\_zoneinfo.py',
+   'PYMODULE')])
