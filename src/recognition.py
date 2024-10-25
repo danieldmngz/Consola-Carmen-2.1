@@ -176,7 +176,7 @@ def run_forever():
     try:
         while True:
             upload_image_from_ip()
-            time.sleep(0.1)  # Pausa de 0.1 segundos antes de la siguiente consulta
+            time.sleep(0.5)  # Pausa de 0.1 segundos antes de la siguiente consulta
     except KeyboardInterrupt:
         logging.info("Proceso detenido manualmente.")
 
