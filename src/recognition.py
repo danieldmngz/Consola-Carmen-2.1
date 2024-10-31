@@ -60,8 +60,81 @@ options = VehicleAPIOptions(
     cloud_service_region="EU"
 )
 client = VehicleAPIClient(options)
+# 1.Función para capturar imagen desde la cámara IP
+def upload_image_from_ip():
+    """Captura una imagen desde la cámara IP y procesa la matrícula."""
+    try:
+        logging.info(f"Conectando a la IP: {IP_INTERFACE}")
+        response = requests.get(
+            IP_INTERFACE, timeout=10)  # Aumentar el timeout si es necesario
+        response.raise_for_status()
 
-# Definición de función asíncrona para insertar datos en la base de datos
+        result = response.json()
+        estadoPin1 = result.get('estadoPin1')
+
+        if estadoPin1 is None:
+            logging.error("Error: No se pudo deserializar la respuesta JSON.")
+            return
+
+        # Verificar si el pin está activo
+        if estadoPin1 == 1:
+            img_response = requests.get(CAPTURE_PLATE_URL, timeout=10)
+            img_response.raise_for_status()
+
+            # Inicialización de variables de respuesta
+            plate_text = "SIN_MATRICULA"
+            category = heading = make = model = unicode_text = None
+
+            # Procesamiento de la imagen con VehicleAPIClient
+            try:
+                api_response = client.send(img_response.content)
+                if hasattr(api_response.data,
+                           'vehicles') and api_response.data.vehicles:
+                    vehicle = api_response.data.vehicles[0]
+                    if vehicle.plate and vehicle.plate.found:
+                        plate_text = vehicle.plate.separatedText
+                        category = getattr(vehicle, 'category', None)
+                        heading = getattr(vehicle, 'heading', None)
+                        make = getattr(vehicle, 'make', None)
+                        model = getattr(vehicle, 'model', None)
+                        unicode_text = getattr(vehicle, 'unicodeText', None)
+                  # Añadir la información detallada en el log
+                logging.info(
+                    f"Imagen procesada con éxito en VehicleAPIClient con los siguientes datos: "
+                    f"Plate Text: {plate_text}, Category: {category}, Heading: {heading}, "
+                    f"Make: {make}, Model: {model}, Unicode Text: {unicode_text}")
+
+            except Exception as e:
+                logging.error(f"Error al enviar la imagen al API: {e}")
+                return
+
+                # Verificar si el texto de la placa es "CERRADA" o "SIN_MATRICULA" para omitir el guardado
+            if plate_text in ["CERRADA", "SIN_MATRICULA"]:
+                logging.info(
+                    f"Placa '{plate_text}' detectada. No se guardará el registro.")
+                return  # Omitir guardado si plate_text es "CERRADA" o "SIN_MATRICULA"
+
+            # Guardar imagen localmente
+            current_time = datetime.now().strftime('%Y%m%d_%H%M%S')
+            file_name = f"{plate_text}_{current_time}.jpg"
+            local_image_path = os.path.join(SNAPSHOT_DIR, file_name)
+
+            with open(local_image_path, 'wb') as file:
+                file.write(img_response.content)
+
+            formatted_date_time = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+            mac_address = "6c:f1:7e:1f:8e:b7"
+            ubicaciones = {"6c:f1:7e:1f:8e:b7": IdParqueaderoHorus}
+            ubicacion_id = ubicaciones.get(mac_address)
+        else:
+            logging.info(
+                "Estado de pin 1 no activo. No se capturó ninguna imagen.")
+
+    except requests.exceptions.RequestException as e:
+        logging.error(
+            f"Error al conectar a la cámara IP o capturar la imagen: {str(e)}")
+
+# 2.Definición de función asíncrona para insertar datos con endpoint en la base de datos
 async def insertar_en_base_de_datos(placa, ruta_snapshot, fecha_snapshot, direccion_mac, parqueadero_id, created_by, updated_by, category, heading, make, model, unicode_text):
     try:
         # Obtener el token de autenticación
@@ -94,19 +167,19 @@ async def insertar_en_base_de_datos(placa, ruta_snapshot, fecha_snapshot, direcc
         # Realizar la solicitud POST al endpoint usando el token
         headers = {'Authorization': f'Bearer {token}'}
         response = requests.post("https://servicesqa.parqueoo.com/api/Carmen/InsertarPlaca", json=data, headers=headers)
-        
+
         # Log detallado del estado HTTP
         logging.info(f"POST a https://servicesqa.parqueoo.com/api/Carmen/InsertarPlaca | Estado HTTP: {response.status_code}")
-        
+
         if response.status_code == 200:
             logging.info(f"Datos insertados correctamente: {data}")
         else:
             logging.warning(f"Error al insertar. Estado: {response.status_code}, Respuesta: {response.text}")
-            
+
     except Exception as e:
         logging.error(f"Error al insertar en el endpoint: {str(e)}")
 
-# Definición de función asíncrona para obtener token de autenticación
+# 3.Definición de función asíncrona para obtener token de autenticación
 async def obtener_token_autenticacion(EMAIL, PASSWORD):
     """Obtiene un token de autenticación usando las credenciales proporcionadas."""
     try:
@@ -116,78 +189,18 @@ async def obtener_token_autenticacion(EMAIL, PASSWORD):
         }
         json_request = json.dumps(token_request)
         headers = {'Content-Type': 'application/json'}
-        
+
         async with aiohttp.ClientSession() as session:
             async with session.post(TokenUrl, data=json_request, headers=headers) as token_response:
                 if token_response.status != 200:
                     logging.error("Fallo en la obtención del token de autenticación.")
                     return None
-                
+
                 token_result = await token_response.json()
                 return token_result['token']  # Asumiendo que el token está en esta clave
     except Exception as e:
         logging.error(f"Error al obtener el token de autenticación: {e}")
         return None
-
-# Función para capturar imagen desde la cámara IP
-def upload_image_from_ip():
-    """Captura una imagen desde la cámara IP y procesa la matrícula."""
-    try:
-        logging.info(f"Conectando a la IP: {IP_INTERFACE}")
-        response = requests.get(IP_INTERFACE, timeout=10)  # Aumentar el timeout si es necesario
-        response.raise_for_status()
-        
-        result = response.json()
-        estadoPin1 = result.get('estadoPin1')
-
-        if estadoPin1 is None:
-            logging.error("Error: No se pudo deserializar la respuesta JSON.")
-            return
-
-        # Verificar si el pin está activo
-        if estadoPin1 == 1:
-            img_response = requests.get(CAPTURE_PLATE_URL, timeout=10)
-            img_response.raise_for_status()
-
-            # Inicialización de variables de respuesta
-            plate_text = "SIN_MATRICULA"
-            category = heading = make = model = unicode_text = None
-
-            # Procesamiento de la imagen con VehicleAPIClient
-            try:
-                api_response = client.send(img_response.content)
-                if hasattr(api_response.data, 'vehicles') and api_response.data.vehicles:
-                    vehicle = api_response.data.vehicles[0]
-                    if vehicle.plate and vehicle.plate.found:
-                        plate_text = vehicle.plate.separatedText
-                        category = getattr(vehicle, 'category', None)
-                        heading = getattr(vehicle, 'heading', None)
-                        make = getattr(vehicle, 'make', None)
-                        model = getattr(vehicle, 'model', None)
-                        unicode_text = getattr(vehicle, 'unicodeText', None)
-                logging.info("Imagen procesada con éxito en VehicleAPIClient")
-
-            except Exception as e:
-                logging.error(f"Error al enviar la imagen al API: {e}")
-                return
-
-            # Guardar imagen localmente
-            current_time = datetime.now().strftime('%Y%m%d_%H%M%S')
-            file_name = f"{plate_text}_{current_time}.jpg"
-            local_image_path = os.path.join(SNAPSHOT_DIR, file_name)
-
-            with open(local_image_path, 'wb') as file:
-                file.write(img_response.content)
-
-            formatted_date_time = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
-            mac_address = "6c:f1:7e:1f:8e:b7"
-            ubicaciones = {"6c:f1:7e:1f:8e:b7": IdParqueaderoHorus}
-            ubicacion_id = ubicaciones.get(mac_address)
-        else:
-            logging.info("Estado de pin 1 no activo. No se capturó ninguna imagen.")
-            
-    except requests.exceptions.RequestException as e:
-        logging.error(f"Error al conectar a la cámara IP o capturar la imagen: {str(e)}")
 
 if __name__ == "__main__":
     try:
@@ -210,7 +223,7 @@ if __name__ == "__main__":
 
             # Si estadoPin1 está activo, captura la imagen
             if estadoPin1 == 1:
-                  upload_image_from_ip()  # Asegúrate de usar await aquí si es una función async
+                upload_image_from_ip()  # Asegúrate de usar await aquí si es una función async
             else:
                 logging.info("Estado de pin 1 no activo. No se capturó ninguna imagen.")
 
