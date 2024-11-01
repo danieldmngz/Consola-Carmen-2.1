@@ -14,4 +14,4 @@ Puedes instalarlos usando `pip`:
 
 ```bash
 pip install requests carmen_cloud_client pyinstaller
-pyinstaller --onefile --add-data "settings.config;." recognitionCSV.py #creamos .exe
+pyinstaller --onefile --add-data "settings.config;." recognition.py

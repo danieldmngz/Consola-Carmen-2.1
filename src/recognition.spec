@@ -1,12 +1,11 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-block_cipher = None
 
 a = Analysis(
     ['recognition.py'],
-    pathex=[],  # Aquí puedes añadir el path donde está tu script si no está en el directorio actual
+    pathex=[],
     binaries=[],
-    datas=[('settings.config', '.')],  # Incluir settings.config en el directorio raíz del ejecutable
+    datas=[('settings.config', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -15,13 +14,13 @@ a = Analysis(
     noarchive=False,
     optimize=0,
 )
-
-pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
+pyz = PYZ(a.pure)
 
 exe = EXE(
     pyz,
     a.scripts,
-    [],
+    a.binaries,
+    a.datas,
     [],
     name='recognition',
     debug=False,
@@ -30,7 +29,7 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=True,  # Cambia a False si no deseas que se muestre la consola
+    console=True,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
